@@ -32,10 +32,10 @@ import java.util.Map;
 public class LayeredRuleTest implements ArchUnitRuleTest {
 
     /**
-     * Все классы которые в пакете PackageName должны заканчиваются согласно правилу RuleNameEnding
+     * Все классы которые в пакете PackageName должны удовлетворять структуре layerBeAccessedByLayers
      *
      * @param packagePath     путь базового пакета для анализа
-     * @param layerBeAccessedByLayers какра где ключ это слой а значение список слоев которые зависят от этого слоя
+     * @param layerBeAccessedByLayers карта где ключ это слой, а значение список слоев которые зависят от этого слоя
      */
     public static void execute(String packagePath, Map<ParamLayer, List<ParamLayer>> layerBeAccessedByLayers) {
 
